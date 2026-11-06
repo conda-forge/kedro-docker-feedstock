@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: kedro-docker
-  version: "0.6.2"
+  version: "0.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/kedro_docker-${{ version }}.tar.gz
-  sha256: c95d04c89ad7725df6ac486800949b0b580e96e57f441f107792db97bc67c3f9
+  sha256: 556afbc39ad0d0df73e11d90da38f1a8b9e9d77663017e138ec6ec9787047205
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   summary: Kedro-Docker makes it easy to package Kedro projects with Docker.
   homepage: https://kedro.org/
   description: |
-       Kedro-Docker makes it easy to package Kedro projects with Docker.
+    Kedro-Docker makes it easy to package Kedro projects with Docker.
   repository: https://github.com/kedro-org/kedro-plugins/tree/main/kedro-docker
   documentation: https://github.com/kedro-org/kedro-plugins/blob/main/kedro-docker/README.md
   license: Apache-2.0
